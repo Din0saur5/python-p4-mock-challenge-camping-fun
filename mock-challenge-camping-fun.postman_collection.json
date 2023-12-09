@@ -11,12 +11,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5555/activities",
+					"raw": "http://localhost:5001/activities",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5555",
+					"port": "5001",
 					"path": [
 						"activities"
 					]
@@ -30,12 +30,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5555/campers",
+					"raw": "http://localhost:5001/campers",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5555",
+					"port": "5001",
 					"path": [
 						"campers"
 					]
@@ -49,12 +49,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5555/campers/1",
+					"raw": "http://localhost:5001/campers/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5555",
+					"port": "5001",
 					"path": [
 						"campers",
 						"1"
@@ -69,12 +69,12 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5555/activities/1",
+					"raw": "http://localhost:5001/activities/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5555",
+					"port": "5001",
 					"path": [
 						"activities",
 						"1"
@@ -98,12 +98,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5555/campers/1",
+					"raw": "http://localhost:5001/campers/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5555",
+					"port": "5001",
 					"path": [
 						"campers",
 						"1"
@@ -127,12 +127,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5555/campers",
+					"raw": "http://localhost:5001/campers",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5555",
+					"port": "5001",
 					"path": [
 						"campers"
 					]
@@ -155,12 +155,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5555/signups",
+					"raw": "http://localhost:5001/signups",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "5555",
+					"port": "5001",
 					"path": [
 						"signups"
 					]
