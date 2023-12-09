@@ -62,13 +62,19 @@ class CamperByID(Resource):
         camper = Camper.query.filter(Camper.id == id).first()
 
         if camper:
-            for attr in request.json:
-                setattr(camper, attr, request.json.get(attr))
+            try:
+                for attr in request.json:
+                    setattr(camper, attr, request.json.get(attr))
 
-            db.session.commit()
+                db.session.commit()
 
-            response_body = camper.to_dict(only=('id', 'name', 'age', 'signups.activity.id', 'signups.activity.name','signups.activity.difficulty'))
-            return make_response(response_body, 202)
+                response_body = camper.to_dict(only=('id', 'name', 'age', 'signups.activity.id', 'signups.activity.name','signups.activity.difficulty'))
+                return make_response(response_body, 202)
+            except ValueError:
+                response_body = {
+                "errors": ["validation errors"]
+                }
+                return make_response(response_body, 400)
         else:
             response_body = {
                 'error': 'Camper not found'
